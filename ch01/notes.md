@@ -72,3 +72,21 @@ print(whales) # ['Ann']
 ```
 Set comprehension is like list comprehension, but creates a set rather than a list
 
+### Lambdas
+`Lambdas Functions` are anonymous functions that are not defined in the namespace. Roughly speaking, they are functions without names, intended for single use. 
+```
+Syntax:
+lambda <arguments> : <return expression>
+```
+A lambda function can have one or multiple arguments, separated by commas. After the colon(:), you define the return expression that may or may not use the defined argument. The return expression can be any expression or even another function. 
+
+Lambda functions are important in Python. They are often used to make code shorter and more concise, or to create arguments of various Python functions (such as map() or reduce() ).
+```
+print((lambda x: x+3)(3)) # 6
+print((lambda x: x+3)(4)) # 7
+
+f = lambda x: x+3
+print(f(8)) # 11
+```
+
+First you create a lambda function that takes a value x and returns the result of the expression x+3. The result is a function object that can be called like any other function. 
