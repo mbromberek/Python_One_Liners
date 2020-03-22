@@ -2,10 +2,10 @@
 
 #### Create VM
 ```
-mkvirtualenv ExerciseDB
+mkvirtualenv oneliners
 pip install -r requirements.txt
 deactivate
-workon ExerciseDB 
+workon oneliners
 workon #See all projects
 ```
 
