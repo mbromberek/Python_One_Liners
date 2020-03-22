@@ -22,3 +22,11 @@ print(','.join(["F", "B", "I"])) # Glues together all elements in the list using
 print(len("Rumpelstiltskin")) # String length: 15
 
 print("ear" in "earth") # Contains: True
+
+## Keyword: is
+y = x = 3
+
+print(x is y) # True
+
+print([3] is [3]) # False
+
