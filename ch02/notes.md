@@ -48,3 +48,28 @@ This demonstrates concept of `list comprehension`. We use list comprehension in 
 
 Of course, you need to get used to thinking in terms of list comprehensions, so the meaning may not come naturally to you. But after reading this book, list comprehensions will be your bread and butter—and you’ll quickly read and write Pythonic code like this.
 
+### Lambda functions
+Lambda functions allow you to define a new function in a single line by using the keyword `lambda`. This is useful when you want to quickly create a function that you will use only once and can be garbage collected immediately afterward. 
+```
+lambda arguments : return expression
+```
+You start the function definition with the keyword `lambda`, followed by a sequence of function arguments. When calling the function the caller must provide these arguments. You then include a colon and the `return expression`, which calculates the return value based on the arguments of the lambda function. The return expression calculates the function output and can be any Python expression. 
+```
+lambda x, y: x + y
+```
+
+### Slicing
+```
+x[start:stop:step]
+```
+Starts at index start (included) and ends at index stop (excluded). You can include an optional third step argument that determines which elements are carved out, so you could choose to include just every step-th element. For example, the slicing operation x[1:4:1] used on variable `x = 'hello world'` results in the string 'ell'. Slicing operation `x[1:4:2]` on the same variable results in string 'el' because only every other element in taken into the resulting slice. 
+If you do not include the step argument Python assumes the default step size of one. 
+If you do not include te beginning or ending arguments Python assumes you want to start at the start, or end at the end. The slice call `x[:4]` would result in 'hell'
+- If step size is positive the default start is the leftmost element, and the default stop is the rightmost element (excluded)
+- If the step size is negative (step <0) the slice traverses the sequence in reverse order. You slice from the rightmost element (included) to the leftmost element (excluded)
+```
+s = 'Eat-more_fruits!'
+print(s[6:1:-1])
+# rom-t
+```
+
