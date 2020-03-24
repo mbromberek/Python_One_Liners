@@ -10,6 +10,7 @@ workon #See all projects
 ```
 
 #### Install required libraries
+pip install matplotlib
 
 #### URLs for book
 https://pythononeliners.com

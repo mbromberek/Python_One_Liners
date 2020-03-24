@@ -73,3 +73,19 @@ print(s[6:1:-1])
 # rom-t
 ```
 
+### Combining List Comprehension and Slicing
+- List Comprehension allows you to iterate over each list element and modify it subsequently
+- Slicing allows you to quickly select every other element from a given List
+
+### Generator Expressions
+`Generator Expressions` work exactly like list comprehensions - but without creating an actual list in memory. The numbers are created on the fly, without storing them explicitly in a list. 
+Example instead of using list comprehension to calculate the squares of the first 20 numbers, `sum([x*x for x in range(20)])` you can use a generator expression: `sum(x*x for x in range(20))`
+
+### Zip functon
+`zip()` takes iterables and aggregates them into a single iterable by aligning the corresponding i-th values into a single tuple. The result is an iterable of tuples.
+
+
+## Summary
+In this chapter you have mastered list comprehensions, file input, the functions lambda, map, and zip, the all qualifier, slicing, and basic list arithmetic. 
+Also learned how to use and manipulate data structures to solve various day to day problems. 
+
