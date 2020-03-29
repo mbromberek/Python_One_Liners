@@ -22,8 +22,8 @@ print(max_income)
 
 
 print('\nExercise 3-1')
-employees = ['Alice', 'Bob', 'Tim']
+employees = np.array(['Alice', 'Bob', 'Tim'])
 print(np.nonzero(salaries == np.max(salaries)))
 
-max_income_employee = employees[np.nonzero(salaries == np.max(salaries))[0][0]]
+max_income_employee = set(employees[np.nonzero(salaries == np.max(salaries)) [0]])
 print(max_income_employee)
