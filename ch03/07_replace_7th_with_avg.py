@@ -14,3 +14,8 @@ tmp[6::7] = np.average(tmp.reshape((-1, 7)), axis=1)
 ## Result
 print(tmp)
 
+'''
+Data arrives in the shape of a one=dimensional array. 
+Reshape the tmp array data into a two-dimensional array with seven columns and three rows, making it easier to calculate the average for the 7 days
+
+'''
