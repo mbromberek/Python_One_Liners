@@ -18,3 +18,7 @@ int The integer data type in Python (default size: 4 or 8 bytes)
 - np.float32 A float data type (4 bytes)
 - np.float64 A float data type (8 bytes)
 
+
+### Conditional Array Search, Filtering and Broadcasting to Detect Outliers
+Will need to find elements in NumPy array that meet a certain condition. 
+
